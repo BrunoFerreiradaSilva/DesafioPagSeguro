@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:id="@+id/titulo_pull_request"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#3977aa"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Titulo pull request" />
+
+        <TextView
+            android:id="@+id/descricao_pull_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/titulo_pull_request"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_pull_request"
+            tools:text="descricao pull request" />
+
+        <ImageView
+            android:id="@+id/imagem_usuario_pull_request"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/descricao_pull_request"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="@+id/descricao_pull_request"
+            app:layout_constraintTop_toBottomOf="@+id/descricao_pull_request" />
+
+        <TextView
+            android:id="@+id/nome_usuario_pull_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imagem_usuario_pull_request"
+            app:layout_constraintTop_toBottomOf="@+id/descricao_pull_request"
+            tools:text="nome do usuario" />
+
+        <TextView
+            android:id="@+id/nome_completo_usuario_pull_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/imagem_usuario_pull_request"
+            app:layout_constraintTop_toBottomOf="@+id/nome_usuario_pull_request"
+            tools:text="nome completo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_usuario_pull_request"
+            android:text="_____________________________________________________________"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

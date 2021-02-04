@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+        <TextView
+            android:id="@+id/nome_repositorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginStart="16dp"
+            android:textColor="#3977aa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043"
+            tools:text="Nome dorepositorio" />
+
+        <TextView
+            android:id="@+id/descricao_repositorio"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lines="2"
+
+            android:textColor="#000"
+            app:layout_constraintEnd_toStartOf="@+id/imagem_avatar_repo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nome_repositorio"
+            app:layout_constraintTop_toBottomOf="@+id/nome_repositorio"
+            tools:text="Descricao do repositorio" />
+
+        <ImageView
+            android:id="@+id/imagem_avatar_repo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.849"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_name_repo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#3977aa"
+            app:layout_constraintEnd_toEndOf="@+id/imagem_avatar_repo"
+            app:layout_constraintStart_toStartOf="@+id/imagem_avatar_repo"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_avatar_repo"
+            tools:text="username" />
+
+        <TextView
+            android:id="@+id/nome_sobrenome_repo"
+            android:layout_width="96dp"
+            android:layout_height="33dp"
+            android:lines="2"
+            app:layout_constraintEnd_toEndOf="@+id/user_name_repo"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="@+id/user_name_repo"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_repo"
+            tools:text="Nome Sobrenome" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/aaaaaa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/descricao_repositorio"
+            app:layout_constraintTop_toBottomOf="@+id/descricao_repositorio"
+            app:layout_constraintVertical_bias="0.032" />
+
+
+        <TextView
+            android:id="@+id/forks_projeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#df9305"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/descricao_repositorio"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="640" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/ic_star"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/forks_projeto"
+            app:layout_constraintTop_toBottomOf="@+id/descricao_repositorio"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <TextView
+            android:id="@+id/stars_projeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#df9305"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/descricao_repositorio"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="640" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="______________________________________________________"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome_sobrenome_repo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
